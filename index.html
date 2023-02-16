@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LariKarol">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Formulário -->
+            <form onsubmit="return false">
+                <input type="number" placeholder="Informe um valor inteiro:" id="x">
+                <select id="operador">
+                    <option value="soma">Somar</option>
+                    <option value="subtração">Subtração</option>
+                    <option value="multiplicação">Multiplicação</option>
+                    <option value="divisão">Divisão</option>
+                </select>
+                <input type="number" placeholder="Informe outro valor inteiro:" id="y">
+                <br>
+                <br>
+                <button onclick="calcular();">Calcular</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
